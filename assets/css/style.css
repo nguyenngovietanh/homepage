@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@200&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
@@ -203,6 +202,12 @@ ol, ul {
 .social-media a {
   width: 50px;
   text-align: center;
+}
+.social-media a svg {
+  transition: all 0.25s;
+}
+.social-media a:hover svg {
+  fill: #DA291C;
 }
 .main-container {
   width: 85%;

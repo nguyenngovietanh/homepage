@@ -282,10 +282,9 @@
                         Địa chỉ: Khối IV – Đường 30/4 – Phường Bắc Lệnh – Thành phố Lào Cai <br>
                         ĐT: 0214.3840.120 - Fax: 0214.3842.425 <br><br>
 
-                        Tổ chức Cứu trợ Trẻ em - Văn phòng Lào Cai <br>
+                        <p class="col-title" style="margin-bottom: 10px">Tổ chức Cứu trợ trẻ em - Văn phòng Lào Cai</p>
                         Địa chỉ: 275 Lê Thanh - Phường Bắc Cường – Thành phố Lào Cai <br>
                         Điện thoại: 0214.2224.002 <br>
-
                     </div>
                 </div>
                 <div class="about-us-col ps-5">
@@ -324,47 +323,3 @@
         <!-- footer.html end -->     
     </body>
 </html>
-<script>
-    let showMore = document.querySelector('#show-more');
-    let morePost = document.querySelector('#more-post');
-    console.log("hello", showMore);
-    showMore.addEventListener("click", function(){
-        morePost.style.display='block';
-    })
-</script>
-<script>
-    let page1 = document.querySelector('#page1');
-    let page2 = document.querySelector('#page2');
-    let page3 = document.querySelector('#page3');
-    let visitPage1 = document.querySelector('#visitPage1');
-    let visitPage2 = document.querySelector('#visitPage2');
-    let visitPage3 = document.querySelector('#visitPage3');
-
-    visitPage1.addEventListener("click", function(){
-        console.log('page1');
-        page1.style.opacity='1';
-        page1.style.transform='scale(1)';
-        page2.style.opacity='0';
-        page2.style.transform='scale(0)';
-        page3.style.opacity='0';
-        page3.style.transform='scale(0)';
-    })
-    visitPage2.addEventListener("click", function(){
-        console.log('page2');
-        page1.style.opacity='0';
-        page1.style.transform='scale(0)';
-        page2.style.opacity='1';
-        page2.style.transform='scale(1)';
-        page3.style.opacity='0';
-        page3.style.transform='scale(0)';
-    })
-    visitPage3.addEventListener("click", function(){
-        console.log('page3');
-        page1.style.opacity='0';
-        page1.style.transform='scale(0)';
-        page2.style.opacity='0';
-        page2.style.transform='scale(0)';
-        page3.style.opacity='1';
-        page3.style.transform='scale(1)';
-    })
-</script>
