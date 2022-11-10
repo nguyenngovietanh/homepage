@@ -68,6 +68,9 @@ body {
   display: flex;
   align-items: center;
 }
+#navbar ul li ul li {
+  height: 70px;
+}
 #navbar ul li {
   color: #1e0f3d;
   transition: all 0.3s ease-in-out;
@@ -203,11 +206,22 @@ ol, ul {
   width: 50px;
   text-align: center;
 }
-.social-media a svg {
-  transition: all 0.25s;
+.social-media a:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.social-media a:hover svg {
-  fill: #DA291C;
+.social-media a i {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.social-media a:nth-child(2) i {
+  font-size: 25px;
+}
+.social-media a:hover i {
+  color: #DA291C;
+  transform: scale(1.1);
 }
 .main-container {
   width: 85%;
@@ -278,8 +292,19 @@ ol, ul {
 }
 .block-item {
   position:relative;
+  border-radius: 10px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+.block-item img {
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.block-item:hover img {
+  transform: scale(1.1);
 }
 .item-overlay {
   position: absolute;
@@ -383,6 +408,7 @@ ol, ul {
   width: 60px;
   height: 60px;
   border-radius: 5px;
+  transition: all 0.3s;
 }
 .latest-news-image img {
   position: absolute;
@@ -397,6 +423,14 @@ ol, ul {
   font-size: 18px;
   padding-left: 16px;
   width: 80%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.latest-news-item:hover .last-news-title {
+  color: #DA291C;
+}
+.latest-news-item:hover .latest-news-image {
+  background: #DA291C;
 }
 
 /* most-viewed-news */
@@ -427,16 +461,26 @@ ol, ul {
   overflow: hidden;
   height: 100%;
   width: 50%;
+  overflow: hidden;
+  transform: scale(1);
+}
+.most-viewed-image:hover img {
+  transform: scale(1.1);
 }
 .most-viewed-item img {
   height: 100%;
   width: 100%;
   opacity: 0.7;
   object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .most-viewed-content {
   padding-left: 20px;
   border: 1px solid #BFBFBF;
+}
+.most-viewed-content:hover .most-viewed-title {
+  color: #DA291C;
 }
 .most-viewed-topic, .most-viewed-topic span {
   font-family: 'Oswald', sans-serif;
@@ -445,6 +489,7 @@ ol, ul {
 }
 .most-viewed-topic {
   color: #DA291C;
+  cursor: default;
 }
 .most-viewed-topic span {
   color: #656565;
@@ -458,11 +503,14 @@ ol, ul {
 .most-viewed-title {
   font-family: 'Oswald';
   font-style: normal;
+  color: #222221;
   font-weight: 700;
   font-size: 18px;
   line-height: 29px;
   width: 93%;
   margin-top: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .most-viewed-text {
   font-family: Lato;
@@ -473,6 +521,7 @@ ol, ul {
   color: #656565;
   margin-top: 5px;
   width: 90%;
+  cursor: default;
 }
 
 /* about-us */
