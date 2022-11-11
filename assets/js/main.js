@@ -20,7 +20,7 @@ menuOpenBtn.onclick = function() {
 navLinks.style.left = "0";
 }
 menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
+navLinks.style.left = "-130%";
 }
 
 
